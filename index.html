@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/download.jpeg" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>SagnikTunes</title>
+</head>
+<body>
+    <div id="musicPlayer">
+        <h1>Sagnik Ⓣunes</h1>
+        
+        <div id="songInfo">
+            <img src="banners/anuvjain.jpg" alt="Anuv Jain" id="banner" width="30" height="20">
+            <div id="songDetails">
+                <h2 id="songTitle">𝒲𝑒𝓁𝒸𝑜𝓂𝑒</h2>
+                <p id="singerName"></p>
+            </div>
+        </div>
+        
+        <ul id="songList">
+            <li data-src="songs/husn.mp3" data-banner="banners/husn.jpg" data-title="Husn">
+                <span>Husn</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/antariksh.mp3" data-banner="banners/antariksh.jpg" data-title="Antariksh">
+                <span>Antariksh</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/mazaak.mp3" data-banner="banners/mazaak.jpg" data-title="Mazaak">
+                <span>Mazaak</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/alagasmaan.mp3" data-banner="banners/alagasmaan.jpg" data-title="Alag Asmaan">
+                <span>Alag Asmaan</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/baarishein.mp3" data-banner="banners/baarishein.jpg" data-title="Baarishein">
+                <span>Baarishein</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/riha.mp3" data-banner="banners/riha.jpg" data-title="Riha">
+                <span>Riha</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/mishri.mp3" data-banner="banners/mishri.jpg" data-title="Mishri">
+                <span>Mishri</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/gul.mp3" data-banner="banners/gul.jpg" data-title="Gul">
+                <span>Gul</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/meribaatonmeintu.mp3" data-banner="banners/meribaatonmeintu.jpg" data-title="Meri Baaton Mein Tu">
+                <span>Meri Baaton Mein Tu</span>
+                <span>&#9654;</span>
+            </li>
+            <li data-src="songs/ocean.mp3" data-banner="banners/ocean.jpg" data-title="Ocean">
+                <span>Ocean</span>
+                <span>&#9654;</span>
+            </li>
+            <!-- Add more songs as needed -->
+        </ul>
+        
+        <audio id="audioPlayer" controls>
+            Your browser does not support the audio element.
+        </audio>
+
+        <div id="nowPlaying">Now Playing: <span id="currentSong">Nothing</span> <div id="loopButton"></div></div>
+        <p id="creator-info">𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝘄𝗶𝘁𝗵 ❤️<br> 𝙗𝙮 𝙎𝙖𝙜𝙣𝙞𝙠 𝘿𝙚𝙮
+        </p>
+    
+        <!-- Follow me on social media -->
+        <div id="follow-me">
+            <p>𝓖𝓮𝓽 𝓲𝓷 𝓽𝓸𝓾𝓬𝓱</p>
+            <a href="https://www.linkedin.com/in/saagniik/" target="_blank"><img class="social-icon" src="icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/sagnik.ai/" target="_blank"><img class="social-icon" src="icons/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@developersagnik" target="_blank"><img class="social-icon" src="icons/youtube.png" alt="YouTube"></a>
+        </div>
+        
+        <script src="scripts.js"></script>
+    </div>
+</body>
+</html>

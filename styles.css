@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url('banners/anuvjainpc.jpg');
+    background-size: cover; /* Change this line */
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#musicPlayer {
+    width: 500px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    border-radius: none;
+    overflow: hidden;
+}
+#musicPlayer h1::first-letter {
+    color: #ff0000; /* Red color for the first letter */
+}
+
+#banner {
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+#songList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    overflow-y: auto;
+    max-height: 200px; /* Set a max height for the song list */
+}
+
+#songList li {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#songList li:hover {
+    background-color: #444;
+    animation: neonGlow 1s infinite alternate;
+}
+
+@keyframes neonGlow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    }
+    to {
+        color: #00ff00;
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url('banners/anuvjainmob.jpeg');
+        background-size: contain; /* Change background-size for mobile */
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    #musicPlayer {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+#nowPlaying {
+    color: #00ff00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#loopButton {
+    background: url('icons/loop.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    animation: neonGlow 1s infinite alternate;
+}
+
+#songInfo {
+    position: relative;
+}
+
+#songDetails {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#audioPlayer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#creator-info {
+    margin-top: -15px; /* Add some space above the creator info */
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+#follow-me {
+    margin-top: -5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    margin-top: -5px;
+}
+
+#logo {
+    width: 50px; /* Adjust the width of the logo */
+    height: 50px; /* Adjust the height of the logo */
+    margin-bottom: 10px;
+}
+
+#songTitle {
+    animation: moveRightToLeft 50s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
